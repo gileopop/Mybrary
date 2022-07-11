@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #282855;
+    --primary-pale1-color: #f0f0ff;
+    --primary-pale2-color: #d7d7ff;
+    --light-color: #f9f8f9;
+    --light-2-color: #e7e6e8;
+    --light-3-color: #cfcdd0;
+    --light-4-color: #b7b4b9;
+    --dark-color: #271e2c;
+    --action-color: #fae65a;
+    --highlight-color: #e86e5a;
+    /*--highlight-color-2: #46C8BE;*/
+    --highlight-color-2: #e86e5a;
+
+    --standard-padding: 40px;
+    --main-margin: 10vh;
+
+    --transition: .2s all ease-in-out;
+}
