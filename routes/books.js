@@ -5,7 +5,7 @@ const router = express.Router();
 const Author = require('../models/author');
 const Book = require('../models/book');
 const uploadPath = path.join('public', Book.coverImageBasePath);
-const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif']
+const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif'];
 const upload = multer({
     dest: uploadPath,
     fileFilter: (req, file, callback) => {
@@ -57,6 +57,5 @@ async function renderNewPage(res, book, hasError = false) {
         res.redirect('/ books');
     }
 }
-
 
 module.exports = router;
