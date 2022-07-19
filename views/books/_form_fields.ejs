@@ -9,7 +9,7 @@
     <label>
         Author
     </label>
-    <select>
+    <select name="author">
         <% authors.forEach(author => { %>
             <% if (author.id === book.author) { %>
                 <option selected label="<%= author.name %>" value="<%= author.id %>"></option>
@@ -24,8 +24,10 @@
     <label>
         Publication Date
     </label>
-    <input type="date" name="publicationDate" value="<%= book.publicationDate == null ? '' : book.publicationDate.toISOString().split('T')[]0] %>"
-    >
+    <input 
+        type="date"
+        name="publicationDate" 
+        value="<%= book.publicationDate == null ? '' : book.publicationDate.toISOString().split('T')[0] %>">
 </div>
 
 <div>
